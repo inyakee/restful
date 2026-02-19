@@ -1,0 +1,150 @@
+/*
+  Tailwind CDN version
+  Update colors inside the tailwind.config in index.html
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.section {
+  position: relative;
+  padding: 6.5rem 0;
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 52px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(243, 241, 230, 0.9) 100%);
+  pointer-events: none;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.bg-hero {
+  background: radial-gradient(circle at 20% 20%, #d8e9c3 0%, #a6d07e 35%, #5aa12f 70%, #2b6b1d 100%);
+}
+
+.bg-soft {
+  background: linear-gradient(135deg, #f7f4ea 0%, #e3f0cf 55%, #c7e1a3 100%);
+}
+
+.bg-about {
+  background: linear-gradient(130deg, rgba(255, 255, 255, 0.7) 0%, rgba(226, 242, 207, 0.7) 50%, rgba(201, 232, 160, 0.7) 100%);
+}
+
+.bg-why {
+  background: linear-gradient(140deg, #e9f3d9 0%, #c2e0a1 55%, #9dcc7a 100%);
+}
+
+.bg-testimonials {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.9) 0%, rgba(234, 245, 219, 0.9) 50%, rgba(211, 233, 180, 0.9) 100%);
+}
+
+.bg-contact {
+  background: linear-gradient(140deg, #f4f2e8 0%, #dcedc8 50%, #c0df92 100%);
+}
+
+.bg-dark {
+  background: linear-gradient(140deg, #3a2418 0%, #6a3c22 55%, #8c5b33 100%);
+}
+
+.bg-card {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.85) 0%, rgba(232, 245, 219, 0.65) 100%);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 70% 20%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 55%);
+  opacity: 0.85;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 24px 60px rgba(17, 54, 8, 0.14);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(120deg, #2b6b1d 0%, #5fb233 50%, #a5da4c 100%);
+  box-shadow: 0 18px 40px rgba(20, 46, 10, 0.22);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 22px 44px rgba(20, 46, 10, 0.3);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link-underline {
+  position: relative;
+}
+
+.nav-link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.35rem;
+  width: 0;
+  height: 2px;
+  background: #4a9f20;
+  transition: width 0.3s ease;
+}
+
+.nav-link-underline:hover::after,
+.nav-link-underline:focus::after {
+  width: 100%;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4.8rem 0;
+  }
+}

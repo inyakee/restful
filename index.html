@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Restful Seed Farm — elegant regenerative farming, premium produce, and trusted supply partnerships."
+    />
+    <title>Restful Seed Farm — Elegant Regenerative Farm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              greenDeep: "#1f6b20",
+              greenCore: "#4a9f20",
+              greenLight: "#9ed347",
+              brownSeed: "#5a2f1f",
+              cream: "#f3f1e6",
+            },
+            fontFamily: {
+              serif: ["Cormorant Garamond", "Times New Roman", "serif"],
+              sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
+            },
+            boxShadow: {
+              soft: "0 24px 60px rgba(17, 54, 8, 0.14)",
+              card: "0 18px 40px rgba(20, 46, 10, 0.18)",
+            },
+            borderRadius: {
+              xl: "28px",
+              lg: "18px",
+              md: "12px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-soft text-[#1b1b1b] font-sans">
+    <header class="sticky top-0 z-20 border-b border-brownSeed/10 bg-cream/85 backdrop-blur-xl">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+        <a class="flex items-center gap-3 text-brownSeed" href="#top" aria-label="Restful Seed Farm">
+          <img
+            src="logo.png"
+            alt="Restful Seed Farm logo"
+            class="h-12 w-12 rounded-full object-cover shadow-soft"
+          />
+          <div class="grid">
+            <span class="font-serif text-lg">Restful Seed Farm</span>
+            <span class="text-[0.7rem] uppercase tracking-[0.2em] text-brownSeed/60">
+              Regenerative Agriculture
+            </span>
+          </div>
+        </a>
+        <button
+          class="nav-toggle flex flex-col gap-1.5 rounded-full border border-brownSeed/20 px-3 py-2 text-brownSeed lg:hidden"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="h-0.5 w-6 rounded-full bg-brownSeed"></span>
+          <span class="h-0.5 w-6 rounded-full bg-brownSeed"></span>
+          <span class="h-0.5 w-6 rounded-full bg-brownSeed"></span>
+        </button>
+        <div class="nav-menu hidden items-center gap-7 font-medium text-brownSeed lg:flex">
+          <a class="nav-link-underline" href="#about">About</a>
+          <a class="nav-link-underline" href="#services">Services</a>
+          <a class="nav-link-underline" href="#why">Why Us</a>
+          <a class="nav-link-underline" href="#testimonials">Testimonials</a>
+          <a class="nav-link-underline" href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div
+        class="nav-menu-mobile mx-auto hidden max-w-6xl flex-col gap-4 px-6 pb-5 text-brownSeed lg:hidden"
+      >
+        <a class="nav-link-underline" href="#about">About</a>
+        <a class="nav-link-underline" href="#services">Services</a>
+        <a class="nav-link-underline" href="#why">Why Us</a>
+        <a class="nav-link-underline" href="#testimonials">Testimonials</a>
+        <a class="nav-link-underline" href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="section bg-hero text-white" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="relative mx-auto grid max-w-6xl items-center gap-10 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr]">
+          <div>
+            <p class="eyebrow text-brownSeed">Restful Seed Farm</p>
+            <h1 class="font-serif text-4xl leading-tight md:text-5xl">
+              Elegant farming, premium harvests, enduring partnerships.
+            </h1>
+            <p class="lead mt-5 text-white/85">
+              We deliver refined, reliable produce through regenerative soil care,
+              thoughtful planning, and a calm, professional experience for modern
+              buyers.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a class="btn-primary" href="#contact">Request Availability</a>
+              <a class="btn-outline" href="#services">View Services</a>
+            </div>
+            <div class="mt-10 grid gap-4 sm:grid-cols-3">
+              <div>
+                <strong class="block text-2xl">120+</strong>
+                <span class="text-white/75">Acres Stewarded</span>
+              </div>
+              <div>
+                <strong class="block text-2xl">42</strong>
+                <span class="text-white/75">Partner Brands</span>
+              </div>
+              <div>
+                <strong class="block text-2xl">98%</strong>
+                <span class="text-white/75">On-Time Delivery</span>
+              </div>
+            </div>
+          </div>
+          <div class="glass rounded-xl border border-white/35 bg-white/20 p-10 text-white shadow-card">
+            <h3 class="font-serif text-2xl">Seasonal Highlights</h3>
+            <p class="mt-3 text-white/80">
+              Winter greens, heritage grains, and curated seed programs ready for
+              discerning shelves.
+            </p>
+            <ul class="mt-6 list-disc space-y-2 pl-5 text-white/80">
+              <li>Weekly availability sheets</li>
+              <li>Traceable harvest windows</li>
+              <li>Custom crop scheduling</li>
+            </ul>
+            <a class="mt-6 inline-block font-semibold text-white" href="#contact">
+              Schedule a call
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-about" id="about">
+        <div class="mx-auto grid max-w-6xl gap-12 px-6 lg:grid-cols-2">
+          <div class="glass reveal rounded-xl p-10">
+            <h2 class="font-serif text-3xl">Thoughtful farming with measurable care.</h2>
+            <p class="mt-4">
+              Restful Seed Farm blends heritage stewardship with data-led soil
+              science. Every planting decision prioritizes soil vitality, water
+              conservation, and reliable yield.
+            </p>
+            <div class="mt-8 grid gap-6">
+              <div>
+                <h4 class="font-serif text-xl">Regenerative Methods</h4>
+                <p>Cover crops, compost enrichment, and low-impact cultivation.</p>
+              </div>
+              <div>
+                <h4 class="font-serif text-xl">Transparent Supply</h4>
+                <p>GPS-mapped fields and harvest-day verification.</p>
+              </div>
+            </div>
+          </div>
+          <div class="reveal">
+            <div class="rounded-xl bg-dark p-10 text-white shadow-card">
+              <span class="inline-block rounded-full bg-white/20 px-3 py-1 text-xs">
+                Since 2008
+              </span>
+              <h3 class="mt-4 font-serif text-2xl">
+                Crafted for the most discerning buyers.
+              </h3>
+              <p class="mt-4 text-white/80">
+                We serve chef-led restaurants, premium markets, and strategic
+                distributors who value clarity, consistency, and premium crop
+                quality.
+              </p>
+              <div class="mt-8 grid gap-4">
+                <div>
+                  <strong class="block text-2xl">25%</strong>
+                  <span class="text-white/70">Soil carbon lift</span>
+                </div>
+                <div>
+                  <strong class="block text-2xl">1,200+</strong>
+                  <span class="text-white/70">Annual deliveries</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="reveal max-w-2xl">
+            <h2 class="font-serif text-3xl">Services designed for premium partnerships.</h2>
+            <p class="mt-3">
+              Reliable supply, expert planning, and flexible programs built to
+              support modern procurement teams.
+            </p>
+          </div>
+          <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <article class="reveal rounded-lg border border-greenCore/20 bg-card p-8 shadow-soft transition hover:-translate-y-1.5 hover:shadow-card">
+              <h3 class="font-serif text-xl">Wholesale Produce</h3>
+              <p class="mt-3">Curated weekly harvests with cold-chain logistics.</p>
+              <a class="mt-4 inline-block font-semibold text-greenDeep" href="#contact">Get pricing</a>
+            </article>
+            <article class="reveal rounded-lg border border-greenCore/20 bg-card p-8 shadow-soft transition hover:-translate-y-1.5 hover:shadow-card">
+              <h3 class="font-serif text-xl">Seed & Nursery</h3>
+              <p class="mt-3">Premium seeds and starts for select grower partners.</p>
+              <a class="mt-4 inline-block font-semibold text-greenDeep" href="#contact">Reserve inventory</a>
+            </article>
+            <article class="reveal rounded-lg border border-greenCore/20 bg-card p-8 shadow-soft transition hover:-translate-y-1.5 hover:shadow-card">
+              <h3 class="font-serif text-xl">Soil Health Audits</h3>
+              <p class="mt-3">Data-led diagnostics for regenerative transitions.</p>
+              <a class="mt-4 inline-block font-semibold text-greenDeep" href="#contact">Request audit</a>
+            </article>
+            <article class="reveal rounded-lg border border-greenCore/20 bg-card p-8 shadow-soft transition hover:-translate-y-1.5 hover:shadow-card">
+              <h3 class="font-serif text-xl">Farm Tours</h3>
+              <p class="mt-3">Guided tours for culinary, retail, and community groups.</p>
+              <a class="mt-4 inline-block font-semibold text-greenDeep" href="#contact">Book tour</a>
+            </article>
+            <article class="reveal rounded-lg border border-greenCore/20 bg-card p-8 shadow-soft transition hover:-translate-y-1.5 hover:shadow-card">
+              <h3 class="font-serif text-xl">Private Label</h3>
+              <p class="mt-3">Custom packaging for premium produce programs.</p>
+              <a class="mt-4 inline-block font-semibold text-greenDeep" href="#contact">Start a program</a>
+            </article>
+            <article class="reveal rounded-lg border border-greenCore/20 bg-card p-8 shadow-soft transition hover:-translate-y-1.5 hover:shadow-card">
+              <h3 class="font-serif text-xl">Distribution Support</h3>
+              <p class="mt-3">Just-in-time delivery planning and reporting.</p>
+              <a class="mt-4 inline-block font-semibold text-greenDeep" href="#contact">Learn more</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-why" id="why">
+        <div class="mx-auto grid max-w-6xl gap-12 px-6 lg:grid-cols-2">
+          <div class="reveal">
+            <h2 class="font-serif text-3xl">Why leading buyers choose us.</h2>
+            <p class="mt-4">
+              You receive consistent supply, a refined client experience, and a
+              team that respects your timelines.
+            </p>
+            <ul class="mt-6 grid gap-3 text-brownSeed">
+              <li class="pl-7 relative before:absolute before:left-0 before:content-['✓'] before:text-greenDeep">
+                Predictive harvest forecasting
+              </li>
+              <li class="pl-7 relative before:absolute before:left-0 before:content-['✓'] before:text-greenDeep">
+                Dedicated account leadership
+              </li>
+              <li class="pl-7 relative before:absolute before:left-0 before:content-['✓'] before:text-greenDeep">
+                Certified regenerative practices
+              </li>
+              <li class="pl-7 relative before:absolute before:left-0 before:content-['✓'] before:text-greenDeep">
+                Transparent volume commitments
+              </li>
+            </ul>
+          </div>
+          <div class="glass reveal rounded-xl p-10">
+            <h3 class="font-serif text-2xl">2025 Partner Results</h3>
+            <div class="mt-6 grid gap-4">
+              <div>
+                <strong class="block text-2xl">18%</strong>
+                <span class="text-brownSeed/70">Average waste reduction</span>
+              </div>
+              <div>
+                <strong class="block text-2xl">3.2x</strong>
+                <span class="text-brownSeed/70">Faster procurement cycles</span>
+              </div>
+              <div>
+                <strong class="block text-2xl">4.9/5</strong>
+                <span class="text-brownSeed/70">Partner satisfaction</span>
+              </div>
+            </div>
+            <a class="btn-primary mt-8 inline-flex" href="#contact">Talk to our team</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-testimonials" id="testimonials">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="reveal max-w-2xl">
+            <h2 class="font-serif text-3xl">Trusted by premium partners.</h2>
+            <p class="mt-3">Consistent quality with the professionalism your teams expect.</p>
+          </div>
+          <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <figure class="reveal rounded-lg border border-greenCore/20 bg-card p-8 shadow-soft">
+              <blockquote>
+                “Every shipment is pristine. Their forecasting makes menu planning effortless.”
+              </blockquote>
+              <figcaption class="mt-6">
+                <strong>Chef Mira L.</strong>
+                <span class="block text-brownSeed/70">Harbor & Hearth</span>
+              </figcaption>
+            </figure>
+            <figure class="reveal rounded-lg border border-greenCore/20 bg-card p-8 shadow-soft">
+              <blockquote>
+                “We trust Restful Seed Farm for premium greens with remarkable shelf life.”
+              </blockquote>
+              <figcaption class="mt-6">
+                <strong>Jordan K.</strong>
+                <span class="block text-brownSeed/70">Northside Markets</span>
+              </figcaption>
+            </figure>
+            <figure class="reveal rounded-lg border border-greenCore/20 bg-card p-8 shadow-soft">
+              <blockquote>
+                “Professional, kind, and reliable. They feel like an extension of our operations.”
+              </blockquote>
+              <figcaption class="mt-6">
+                <strong>Priya S.</strong>
+                <span class="block text-brownSeed/70">Freshline Distribution</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-hero text-white" id="cta">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="glass reveal flex flex-wrap items-center justify-between gap-6 rounded-xl bg-white/20 p-10">
+            <div>
+              <h2 class="font-serif text-3xl">Ready for a refined supply partnership?</h2>
+              <p class="mt-3 text-white/85">
+                Share your volume goals and receive a tailored supply plan within 48 hours.
+              </p>
+            </div>
+            <a class="btn-primary" href="#contact">Start a Partnership</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-contact" id="contact">
+        <div class="mx-auto grid max-w-6xl gap-12 px-6 lg:grid-cols-2">
+          <div class="glass reveal rounded-xl p-10">
+            <h2 class="font-serif text-3xl">Let’s craft your supply plan.</h2>
+            <form
+              class="mt-6 grid gap-4"
+              action="https://formspree.io/f/xeelzygz"
+              method="POST"
+            >
+              <label class="grid gap-2 font-semibold text-brownSeed">
+                Full Name
+                <input
+                  class="rounded-md border border-brownSeed/20 px-4 py-3"
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </label>
+              <label class="grid gap-2 font-semibold text-brownSeed">
+                Email Address
+                <input
+                  class="rounded-md border border-brownSeed/20 px-4 py-3"
+                  type="email"
+                  name="email"
+                  placeholder="you@email.com"
+                  required
+                />
+              </label>
+              <label class="grid gap-2 font-semibold text-brownSeed">
+                Company / Organization
+                <input
+                  class="rounded-md border border-brownSeed/20 px-4 py-3"
+                  type="text"
+                  name="company"
+                  placeholder="Company name"
+                />
+              </label>
+              <label class="grid gap-2 font-semibold text-brownSeed">
+                Project Details
+                <textarea
+                  class="rounded-md border border-brownSeed/20 px-4 py-3"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell us about your needs"
+                ></textarea>
+              </label>
+              <input type="hidden" name="_subject" value="New inquiry — Restful Seed Farm" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://YOUR_GITHUB_PAGES_URL/#contact"
+              />
+              <button class="btn-primary" type="submit">Send inquiry</button>
+            </form>
+          </div>
+          <div class="reveal">
+            <h3 class="font-serif text-2xl">Contact Information</h3>
+            <p class="mt-4 text-brownSeed/70">
+              1450 Meadow Lane, Sonoma Valley, CA 95476<br />
+              (707) 555-0148<br />
+              hello@restfulseedfarm.com
+            </p>
+            <div class="mt-6 grid gap-4">
+              <div class="glass rounded-lg p-6">
+                <h4 class="font-serif text-xl">Office Hours</h4>
+                <p class="mt-2 text-brownSeed/70">Mon–Fri: 8am–6pm</p>
+              </div>
+              <div class="glass rounded-lg p-6">
+                <h4 class="font-serif text-xl">Harvest Updates</h4>
+                <p class="mt-2 text-brownSeed/70">Subscribe to weekly availability sheets.</p>
+              </div>
+            </div>
+            <div class="mt-6 flex gap-4 font-semibold text-brownSeed">
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+              <a href="#" aria-label="Facebook">Facebook</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white">
+      <div class="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-3">
+        <div>
+          <strong class="text-lg">Restful Seed Farm</strong>
+          <p class="mt-3 text-white/75">Elegant regenerative farming for modern partners.</p>
+        </div>
+        <div class="grid gap-2">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="grid gap-2">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+      <div class="bg-black/20 py-4 text-center text-sm">© 2026 Restful Seed Farm. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
